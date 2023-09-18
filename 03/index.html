@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" target="_blank">
+            <label for="user-name">Name</label>
+            <input type="text" name="user-name" id="user-name" value="" required>
+            <label for="user-email">Email</label>
+            <input type="email" name="user-email" id="user-email" value="" required>
+            <label for="user-password">Password</label>
+            <input type="password" name="user-password" id="user-password" value="" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="user_password" name="confirm-password" id="confirm-password" value="" required>
+            <label for="user_gender">Gender</label>
+            <input type="radio" name="gender" id="user_gender" value="male" checked>male
+            <input type="radio" name="gender" id="user_gender" value="female">female
+            <label for="user-age">Age</label>
+            <input type="number" name="user-age" id="user-age" value="user-age" max="99" min="1" required>
+            <label for="user_course">Course</label>
+            <select name="Course" id="user_course" required>
+                <option value="Choose_a_course" selected disabled>-=Choose a course=-</option>
+                <option value="UI/UX_design">UI/UX Design</option>
+                <option value="Front-End_developer">Front-End Developer</option>
+                <option value="QA_Manual">QA Manual</option>
+            </select>
+            <label for="user_address">Full address</label>
+            <textarea name="user_address" id="user_address" cols="40" rows="3" placeholder="Country, region, city/village, street" required></textarea>
+            <label for="date">Date of birth</label>
+            <input type="date" name="date_of_birth" id="date" value="date_of_birth" required>
+            <label for="image">Click here</label>
+            <input type="image" src="./img/image.jpg" width="100" height="100" name="some_image" id="image" value="image" required>
+            <label for="color">Choose your color</label>
+            <input type="color" name="user-color" id="color" value="user-color" required>
+            <label for="user_time">What time is it?</label>
+            <input type="time" name="users_time" id="user_time" value="time" required>
+            <label for="user_range">Rate your beauty</label>
+            <input type="range" name="user_beauty" id="user_range" value="range" max="10" min="0" required>
+            <label for="checkbox">I agree to the processing of personal data</label>
+            <input type="checkbox" name="aggrement" id="checkbox" value="aggrement" required>
+            <button type="reset">
+                Reset form
+            </button>
+            <button type="submit">Register</button>
+        </form>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,16 @@
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+.heading {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 36px;
+    color: slateblue;
+    letter-spacing: 2.4px;
+}

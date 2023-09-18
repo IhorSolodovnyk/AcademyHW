@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic</title>
+</head>
+<body>
+    <header>
+        <h1>
+            HTML5 Семантичні елементи
+        </h1>
+        <p>
+            Семантичний елемент чітко описує його значення як для браузера, так і
+            для розробника.
+              </p>
+              <p>
+                Приклади не <strong>семантичних</strong> елементів: &lt;div&gt; і &lt;span&gt;- нічого не говорить про його вміст.
+              </p>
+              <p>
+                Приклади <strong>семантичних</strong> елементів: &lt;form&gt;, &lt;table&gt; і &lt;article&gt; - чітко визначає його зміст.
+              </p>    
+    </header>
+    <main class="main">
+        <h2>
+            Підтримка браузерів
+        </h2>
+            <div><img src="./img/google.png" width="50" height="50" alt="google_chrome">
+                <img src="./img/explorer.png" width="50" height="50" alt="internet_explorer">
+                <img src="./img/mozilla.png" width="50" height="50" alt="mozilla_firefox">
+                <img src="./img/safari.png" width="50" height="50" alt="safari_browser">
+                <img src="./img/opera.png" width="50" height="50" alt="opera_browser">
+            </div>
+            <p>
+                Семантичні елементи HTML5 підримуються у всіх сучасних браузерах.
+            </p>
+            <p>
+                Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".
+            </p>
+            <p>
+                Прочитайте про це в <a href="https://www.blogger.com/dashboard/reading"
+                target="_blank">підтримці браузера HTML</a>.
+            </p>
+            <section>
+                <h2>
+                    Нові семантичні елементи в HTML5
+                </h2>
+                <p>
+                    HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки: </p>
+                    <ul>
+                        <li><a href="#section1">&lt;section&gt;</a></li>
+                        <li><a href="#section2">&lt;article&gt;</a></li>
+                        <li><a href="#section3">&lt;header&gt;</a></li>
+                        <li><a href="#section4">&lt;footer&gt;</a></li>
+                    </ul>
+            </section>
+            <section class="section" id="section1">
+                <h2>HTML5 &lt;section&gt; елемент</h2>
+                <p>Елемент &lt;section&gt; визначає розділ в документі.</p>
+                <p>Згідно з документацією в3к'с HTML5:"розділ представляє собою тематичну угруповування контенту, зазвичай з заголовком".</p>
+                <p>Домашня сторінка зазвичай може бути розділена на розділи ждя ознайомлення, змісту і контактної інформації.</p>
+                <a href="https://codepen.io/pen/" target="_blank">
+                    <img src="./img/code.jpg" width="700"
+                    height="150" border="0" alt="code_example">
+                </a>
+                <!--<section>
+                    <h1>WWF</h1>
+                    <p>The World Wide Fund for Nature (WWF)is....</p>
+                </section>-->
+            </section>
+            <section class="article" id="section2">
+                <h2>HTML5 &lt;article&gt; елемент</h2>
+                <p>Елемент &lt;article&gt; визначає незалежний, авономний вміст.</p>
+                <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
+                <p>Приклади того, де можна використовувати елемент &lt;article&gt;:</p>
+                <ul>
+                    <li><p>Повідомлення на форумі</p></li>
+                    <li><p>блозі</p></li>
+                    <li><p>Газетна стаття</p></li>
+                </ul>
+                <a href="https://codepen.io/pen/" target="_blank">
+                    <img src="./img/code2.jpg" width="700" height="150" border="0" alt="code_example2">
+                </a>
+                <!--<article>
+                    <h1>What Does WWF Do?</h1>
+                    <p>WWF`s misson is to stop the degradation or our planet`s natural environment, and buld a future in which humans live in harmony with nature.</p>
+                </article>-->
+            </section>
+            <section class="header" id="section3">
+                <h1>HTML5 &lt;header&gt; елемент</h1>
+                <p>Елемент &lt;header&gt; задає заголовок для документа або розділу.</p>
+                <p>Елемент &lt;header&gt; повинен використовуватися в якості контейнера для вступного змісту.</p>
+                <p>В одному документі може бути кілька елементів &lt;header&gt;.</p>
+                <p>У наступному прикладі визначається заголовок для статті:</p>
+                <a href="https://codepen.io/pen/" target="_blank">
+                    <img src="./img/code3.jpg" width="700" height="220" border="0" alt="code_example3">
+                </a>
+                <!--<article>
+                    <header>
+                        <h1>What Does WWF Do?</h1>
+                        <p>WWF`s mission:</p>
+                    </header>
+                    <p>WWF`s mission is to stop degradation of our planet`s natural environment, and buld a future in which humans live in harmony with nature.</p>
+                </article>-->
+            </section>
+            <section class="footer" id="section4">
+                <h2>HTML5 &lt;footer&gt; елемент</h2>
+                <p>Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу.</p>
+                <p>Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови використання, контактні дані і т.д.</p>
+                <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
+                <a href="https://codepen.io/pen/" target="_blank">
+                    <img src="./img/code4.jpg" width="700" height="150" border="0" alt="code_example4">
+                </a>
+                <!--<footer>
+                    <p>Posted by: Hege Refsnes</p>
+                    <p>Contact information: <a href="https://github.com/IhorSolodovnyk">https://github.com/IhorSolodovnyk</a></p>
+                </footer>-->
+            </section>
+            <section class="CV">
+                <iframe src="../01/en.html" frameborder="0" width="500" height="600"></iframe>
+            </section>
+            <section class="youtube_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+    </main>
+    <footer>
+        <article>
+            <h3>Контактна інформація</h3>
+            <ul>
+                <li><a href="tel:+380637203412">+380637203412</a>
+                </li>
+                <li><a href="solodovnikihor21@gmail.com">solodovnikihor21@gmail.com</a></li>
+            </ul>
+        </article>
+    </footer>
+</body>
+</html>
