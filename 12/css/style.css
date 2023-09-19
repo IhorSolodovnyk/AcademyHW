@@ -1,0 +1,210 @@
+body {
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.hero_content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    position: relative;
+    max-width: 1170px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.hero_content:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fc0;
+}
+
+.header_content {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.photo_card {
+    padding: 15px;
+    width: 430px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to right, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to top, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to top, #fc0 100px, transparent 100px 330px, #fc0 330px);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+    background-position: bottom, top, left, right;
+}
+
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 430px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    top: -25px;
+    left: 10px;
+    cursor: auto;
+    background-color: #FC0
+}
+
+
+.header_sub {
+    color: #898F8F;
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header_headtext {
+    color: #FC0;
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.img_header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_header::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 210px;
+    background-color: #FC0;
+}
+
+.img_header::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 210px;
+    background-color: #FC0;
+}
+
+.photo_card img {
+    width: 400px;
+    border: 1px solid #FC0;
+}
+
+.hero_headtext {
+    color: #666;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hero_headtext::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: #fc0;
+    width: 100px;
+    top: 75px;
+    right: 70px;
+}
+
+.header_subtext {
+    color: #666;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.links_items {
+    background-color: #fff;
+    border: 3px solid #cccccc;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links_items a {
+    color: #cccccc;
+}
+
+.hero_content_subtext {
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.btn {
+    border: 1px solid #fc0;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #666666;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+}

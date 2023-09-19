@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Farro';
+    src: url(../fonts/Farro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'PT Sans italic';
+    src: url(../fonts/PTSans-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Staatliches';
+    src: url(../fonts/Staatliches-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url(../fonts/Tourney_Condensed-SemiBold.ttf);
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: flex-start;
+    padding: 70px 120px;
+}
+
+.container {
+    padding: 13px 120px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.lang_site {
+    font-family: 'Tourney';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+}
+
+.main_nav {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav_item {
+    color: #000;
+    font-family: 'Staatliches';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+.slash {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Straatliches';
+}
+
+.main_logo_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: stretch;
+    align-items: flex-start;
+}
+
+.headtext_chapter {
+    color: #000;
+    font-family: 'Francois One';
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.sup {
+    text-transform: capitalize;
+    color: #000;
+    font-family: 'Farro';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    top: -25px
+}
+
+.chapter_sub_text {
+    color: #000;
+    font-family: 'PT Sans';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.chapter_italic {
+    font-family: 'PT Sans';
+    font-style: italic;
+}
+
+.bold_sub_text {
+    font-weight: 700;
+}
+
+.background_color_text {
+    background-color: #dadada;
+}
+
+.letter-spacing {
+    letter-spacing: 0;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae9a231a8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="hero">
+        <div class="container">
+            <div class="form_wrapper">
+                <form class="form">
+                    <div class="main_content">
+                        <h2 class="main_headtext">Create an Account</h2>
+                        <div class="name_form">
+                            <div class="name_input">
+                                <label for="" class="label_input">First name</label>
+                                <input type="text" id="first_name" name="first_name" placeholder="Write first name">
+                            </div>
+                            <div class="name_input">
+                                <label for="" class="label_input">Last name</label>
+                                <input type="text" id="second_name" name="second_name" placeholder="Write last name">
+                            </div>
+                        </div>
+                        <div class="email_item">
+                            <div class="email_input">
+                                <label for="" class="label_input">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Write email here">
+                                <p class="subtext_email">We'll never share your email with anyone else.</p>
+                            </div>
+                        </div>
+                        <div class="radio_items">
+                            <div class="radio_male">
+                                <label for="radio_male" class="fake_radio">
+                                    <input type="radio" name="gender" id="radio_male" value="male">
+                                </label>
+                                <label for="radio_male" class="label_input">Male</label>
+                            </div>
+                            <div class="radio_female">
+                                <label for="radio_female" class="fake_radio">
+                                    <input type="radio" name="gender" id="radio_female" value="female">
+                                </label>
+                                <label for="radio_female" class="label_input">Female</label>
+                            </div>
+                        </div>
+                        <div class="select_location">
+                            <div class="select_country">
+                                <label for="" class="label_input">Country</label>
+                                <label for="" class="input_select">
+                                    <i class="fa-solid fa-sort-up"></i>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <select name="select_country" id="" class="select_content">
+                                        <option value="none" class="custom_option">Select
+                                        </option>
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="usa">USA</option>
+                                        <option value="germany">Germany</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="select_city">
+                                <label for="" class="label_input">City</label>
+                                <input type="text" placeholder="Write your city">
+                            </div>
+                        </div>
+                        <div class="button_content">
+                            <button type="button" class="sign_up_button">
+                                <span class="button_text">Sign Up</span>
+                            </button>
+                        </div>
+                        <div class="terms">
+                            <p class="sub_terms">
+                                By clicking the 'Sign Up' button, you confirm that you accept our
+                                <a href="#">Terms of Use</a>
+                                and <a href="#">Privacy Policy</a>.
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="registr_link">
+                            <span class="reg_text">
+                                Have an account?
+                            </span>
+                            <span class="reg_link">
+                                <a href="#">Log in</a>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_wrapper">
+                <form action="form">
+                    <div class="main_content">
+                        <h2 class="main_headtext">Profile</h2>
+                        <div class="form_content">
+                            <div class="upload_file">
+                                <div class="user_image">
+                                    <img src="./img/📷 Image.svg" alt="">
+                                </div>
+                                <div class="file_item">
+                                    <input type="file" name="file_upload" id="file">
+                                    <label for="file" class="file_lbl"><i class="fa-solid fa-camera"></i></label>
+                                    <span class="subtext_file">Up to 1mb(300x300 px)</span>
+                                </div>
+                                <div class="delete_file">
+                                    <button type="button" class="delete_button">
+                                        <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            <div class="content_section">
+                                <div class="form_items">
+                                    <label for="name" class="label_input">Name</label>
+                                    <input type="text" name="name" id="name"      placeholder="Write your name">
+                                </div>
+                                <div class="form_items" >
+                                    <label for="email" class="label_input">Email</label>
+                                    <input type="email" id="email" placeholder="Write your email here">
+                                </div>
+                            </div>
+                            <div class="content_section">
+                                <div class="form_items">
+                                    <label for="" class="label_input">Country</label>
+                                    <label for="" class="input_select">
+                                        <i class="fa-solid fa-sort-up"></i>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <select name="select_country" id="" class="select_content">
+                                            <option value="none" class="custom_option">Select
+                                            </option>
+                                            <option value="ukraine">Ukraine</option>
+                                            <option value="usa">USA</option>
+                                            <option value="germany">Germany</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form_items">
+                                    <label for="" class="label_input">City</label>
+                                    <input type="text" placeholder="Write your city">
+                                </div>
+                            </div>
+                            <div class="content_section">
+                                <div class="form_items">
+                                    <label for="number" class="label_input" >
+                                        Zip Code
+                                    </label>
+                                    <input type="number" name="zipcode_number" id="number"  placeholder="299201">
+                                </div>
+                                <div class="form_items">
+                                    <label for="tel" class="label_input">Phone Number</label>
+                                    <input type="tel" id="tel" placeholder="+380638887035">
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="button" class="update_button">
+                                    <span class="button_text">
+                                        Update
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

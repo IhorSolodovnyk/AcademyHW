@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Farro';
+    src: url(../fonts/Farro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'PT Sans italic';
+    src: url(../fonts/PTSans-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Staatliches';
+    src: url(../fonts/Staatliches-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url(../fonts/Tourney_Condensed-SemiBold.ttf);
+}
+
+.header {
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+
+.container {
+    padding: 13px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container_hero {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.lang_site {
+    font-family: 'Tourney';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+}
+
+.main_nav {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav_item {
+    color: #000;
+    font-family: 'Staatliches';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+.slash {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Straatliches';
+}
+
+.main_logo_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text {
+    display: flex;
+    position: relative;
+}
+
+.main_text::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    top: 20px;
+}
+
+.main_headtext {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+}
+
+.card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    padding: 20px 0;
+}
+
+.card_inner {
+    width: 270px;
+    height: 180px;
+    position: relative;
+}
+
+.card_inner:hover .card_front {
+    transform: rotateY(180deg);
+}
+
+.card_inner:hover .card_back {
+    transform: rotateY(0deg);
+}
+
+.card_front, .card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_front {
+    background-color: #E6E6E6;    
+    backface-visibility: hidden;
+}
+
+.card_back {
+    background: var(--logos-black-bg, #1A1A1A);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    max-width: 793px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

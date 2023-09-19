@@ -1,0 +1,141 @@
+.main_content {
+    margin: 0 auto 35px;
+    max-width: 100%;
+    height: 100%;
+    width: 1415px;
+    border: 20px solid #2B81AC;
+    background-color: #3399CC;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.main_content {
+    margin: 0 auto;
+}
+
+.header_text {
+    width: 1170px;
+    margin: 0 auto 35px;
+}
+
+.header_content {
+    text-align: start;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+.forecast_items {
+    max-width: 1170px;
+    margin: 0 auto 35px;
+    font-size: 0;
+    width: 100%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.wi {
+    font-size: 25px;
+}
+
+.forecast_items div {
+    padding-top: 26px;
+    padding-bottom: 27px;
+    display: inline-block;
+    font-size: 2vw;
+    border: 1px solid #fff;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    max-width: 100%;
+    cursor: url(../img/cursor.svg), auto;
+}
+
+.forecast_items div:hover {
+    border: 3px solid #fff;
+}
+
+.forecast_items div:nth-child(1) {
+    background-color: #3399CC;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(2) {
+    background-color: #33CCCC;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(3) {
+    background-color: #996699;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(4) {
+    background-color: #C24747;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(5) {
+    background-color: #E2674A;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(6) {
+    background-color: #FFCC66;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(7) {
+    background-color: #99CC99;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(8) {
+    background-color: #669999;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(9) {
+    background-color: #CC6699;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(10) {
+    background-color: #339966;
+    opacity: 0.7;
+}
+
+.forecast_items div:nth-child(11) {
+    background-color: #666699;
+    opacity: 0.7;
+}
+
+.forecast_items div:hover {
+    opacity: 1;
+}
+
+.footer_content {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.footer_text {
+    font-size: 16px;
+    text-align: start;
+    padding-bottom: 90px;
+}
+
+
+
+
+
+
