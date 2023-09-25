@@ -4,6 +4,11 @@
     font-family: 'Montserrat';
 }
 
+body {
+    max-width: 1440px;
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
