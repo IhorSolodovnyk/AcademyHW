@@ -31,7 +31,7 @@ a {
 }
 
 .header_wrapper {
-    background-image: url(../img/hero_background.jpg);
+    background-image: url(./img/hero_background.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-top: 200px;
@@ -168,7 +168,7 @@ a {
 
 .choose_us {
     width: 100%;
-    background-image: url(../img/WhyBackground.jpg);
+    background-image: url(./img/WhyBackground.jpg);
     background-repeat: no-repeat;
     min-height: 700px;
 }
@@ -221,7 +221,7 @@ a {
     letter-spacing: 1.12px;
     text-transform: uppercase;
     border: 0;
-    background-image: url(../img/button_gradient.svg);
+    background-image: url(./img/button_gradient.svg);
     background-position: left;
     background-repeat: no-repeat;
     background-color: #5373FD;
@@ -242,4 +242,27 @@ a {
 
 .choose_image_cards:last-of-type {
     padding-left: 20%;
+}
+
+
+.icon_content_section {
+    width: 100%;
+    background-color: #333;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon_navigation {
+    width: 65px;
 }
