@@ -31,7 +31,7 @@ a {
 }
 
 .header_wrapper {
-    background-image: url(./img/hero_background.jpg);
+    background-image: url(/First_Project/img/hero_background.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-top: 200px;
@@ -168,7 +168,7 @@ a {
 
 .choose_us {
     width: 100%;
-    background-image: url(./img/WhyBackground.jpg);
+    background-image: url(/First_Project/img/WhyBackground.jpg);
     background-repeat: no-repeat;
     min-height: 700px;
 }
@@ -221,7 +221,7 @@ a {
     letter-spacing: 1.12px;
     text-transform: uppercase;
     border: 0;
-    background-image: url(./img/button_gradient.svg);
+    background-image: url(/First_Project/img/button_gradient.svg);
     background-position: left;
     background-repeat: no-repeat;
     background-color: #5373FD;
@@ -253,7 +253,9 @@ a {
 .content_wrapper {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
+    padding-top: 100px;
+    position: relative;
 }
 
 .icon_wrapper {
@@ -263,6 +265,42 @@ a {
     gap: 15px;
 }
 
+.icon_subtext {
+    color: #FFF;
+    font-family: 'Aleo';
+    font-size: 36px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
 .icon_navigation {
     width: 65px;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  width: 2px; /* Ширина линии */
+  height: 100%; /* Высота линии */
+  background: linear-gradient(90deg, transparent 10%, #3498db 10%, #3498db 90%, transparent 90%);
+  top: 0;
+  left: 50%; /* Расположение линии относительно элемента1 */
+  transform: translateX(-50%);
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  width: 2px; /* Ширина линии */
+  height: 100%; /* Высота линии */
+  background: linear-gradient(90deg, transparent 10%, #3498db 10%, #3498db 90%, transparent 90%);
+  top: 0;
+  left: 50%; /* Расположение линии относительно элемента2 */
+  transform: translateX(-50%);
+}
+
+/* Опциональные стили для пунктира */
+.line::before,
+.line::after {
+  background-size: 5px 5px; /* Размер пунктира */
 }

@@ -29,7 +29,7 @@ a {
 }
 
 .header_wrapper {
-  background-image: url(./img/hero_background.jpg);
+  background-image: url(/First_Project/img/hero_background.jpg);
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 200px;
@@ -164,7 +164,7 @@ a {
 
 .choose_us {
   width: 100%;
-  background-image: url(./img/WhyBackground.jpg);
+  background-image: url(//First_Project/img/WhyBackground.jpg);
   background-repeat: no-repeat;
   min-height: 700px;
 }
