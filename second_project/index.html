@@ -7,79 +7,104 @@
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/dist/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+3&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/ae9a231a8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="hero_page">
+    <header class="header" id="header">
+       <div class="header_wrapper">
         <div class="container">
-            <header class="header_wrapper">
-                <div class="header_content">
-                    <div class="logo_wrapper">
-                        <img src="./assets/Logo.svg" alt="" class="page_logo">
-                    </div>
-                    <nav class="nav_wrapper">
-                        <ul class="nav_list">
-                            <li class="list_item">
-                                <p>about us</p>
-                            </li>
-                            <li class="list_item">
-                                <p>projects</p>
-                            </li>
-                            <li class="list_item">
-                                <p>news</p>
-                            </li>
-                            <li class="list_item">
-                                <p>contacts</p>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="social_media">
-                        <div class="social_item">
+            <div class="header_content">
+                <div class="logo_wrapper">
+                    <a href="#">
+                        <img src="./img/Logo.svg" alt="" class="page_logo">
+                    </a>
+                </div>
+                <nav class="nav_wrapper">
+                    <ul class="nav_list">
+                        <li class="list_item">
+                            <a class="nav_link">about us</a>
+                        </li>
+                        <li class="list_item">
+                            <a class="nav_link">projects</a>
+                        </li>
+                        <li class="list_item">
+                            <a class="nav_link">news</a>
+                        </li>
+                        <li class="list_item">
+                            <a class="nav_link">contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social_media">
+                    <ul class="social_list">
+                        <li class="social_item">
                             <a href="#" class="social_link">
                                 <i class="fa-brands fa-facebook-f header_icon"></i>
                             </a>
-                        </div>
-                        <div class="social_item">
+                        </li>
+                        <li class="social_item">
                             <a href="#" class="social_link">
                                 <i class="fa-brands fa-twitter header_icon"></i>
                             </a>
-                        </div>
-                        <div class="social_item">
+                        </li>
+                        <li class="social_item">
                             <a href="#" class="social_link">
                                 <i class="fa-brands fa-instagram header_icon"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div class="hero_wrapper">
-                <div class="hero_content">
-                    <h1 class="hero_title">
-                        simple modern
-                    </h1>
-                    <p class="hero_subtitle">
-                        we make the world beautiful everyday
-                    </p>
-                </div>
-                <div class="scroll_button">
-                    <div class="scroll_icon">
-                        <a href="#" class="scroll_down">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projects_wrapper">
+       </div>
+        <div class="hero_slider">
+            <div class="hero_content">
+                <img src="./img/hero_back.jpg" class="slider_img" alt="">
+                <div class="slider_content">
+                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+            <div class="hero_content">
+                <img src="./img/hero_slider_img.jpg" class="slider_img" alt="">
+                <div class="slider_content">
+                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+            <div class="hero_content">
+                <img src="./img/hero_slider_img2.jpg" class="slider_img" alt="">
+                <div class="slider_content">
+                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+            <div class="hero_content">
+                <img src="./img/hero_slider_img3.jpg" class="slider_img" alt="">
+                <div class="slider_content">
+                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+            <div class="hero_content">
+                <img src="./img/hero_slider_img4.jpg" class="slider_img" alt="">
+                <div class="slider_content">
+                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="projects_wrapper" id="project_section">
         <div class="container">
             <div class="projects_heading">
                 <h2 class="projects_title">
@@ -87,7 +112,7 @@
                 </h2>
             </div>
             <div class="projects_content">
-                <img src="./assets/circle_wall.jpg" alt="">
+                <img src="./img/circle_wall.jpg" alt="">
                 <div class="project_description">
                     <div class="description_heading">
                         <p class="description_sup">our world</p>
@@ -101,12 +126,13 @@
                         more details
                     </button>
                     <p class="project_location">
+                        <i class="fa-solid fa-location-dot"></i>
                         New York City, United States - 1776 feet
                     </p>
                 </div>
             </div>
             <div class="projects_content reverse">
-                <img src="./assets/house.jpg" alt="">
+                <img src="./img/house.jpg" alt="">
                 <div class="project_description">
                     <div class="description_heading">
                         <p class="description_sup">international</p>
@@ -120,6 +146,7 @@
                         more details
                     </button>
                     <p class="project_location">
+                        <i class="fa-solid fa-location-dot"></i>
                         Hong Kong - 1588 feet
                     </p>
                 </div>
@@ -133,13 +160,13 @@
             </h3>
             <div class="article_slider">
                 <div class="slider_item">
-                    <img src="./assets/slider_img1.jpg" alt="">
+                    <img src="./img/slider_img1.jpg" alt="">
                     <div class="article_content">
                         <h4 class="article_heading">see the unmatched beauty of the great.</h4>
                         <p class="article_description">Free directories: directories are perfect for customers that are
                             searching for...</p>
                         <div class="article_author">
-                            <img src="./assets/author_photo1.jpg" alt="">
+                            <img src="./img/author_photo1.jpg" alt="">
                             <div class="author_info">
                                 <p class="author_name">alja brun</p>
                                 <p class="article_date">20 Jan 2020</p>
@@ -148,12 +175,12 @@
                     </div>
                 </div>
                 <div class="slider_item">
-                    <img src="./assets/slider_img2.jpg" alt="">
+                    <img src="./img/slider_img2.jpg" alt="">
                     <div class="article_content">
                         <h4 class="article_heading">EFFECTIVE ADVERTISING POINTERS.</h4>
                         <p class="article_description">Having a home based business is a wonderful asset to your life...</p>
                         <div class="article_author">
-                            <img src="./assets/author_photo2.jpg" alt="">
+                            <img src="./img/author_photo2.jpg" alt="">
                             <div class="author_info">
                                 <p class="author_name">DOMINIC FREEMAN</p>
                                 <p class="article_date">13 Dec 2019</p>
@@ -162,12 +189,12 @@
                     </div>
                 </div>
                 <div class="slider_item">
-                    <img src="./assets/slider_img3.jpg" alt="">
+                    <img src="./img/slider_img3.jpg" alt="">
                     <div class="article_content">
                         <h4 class="article_heading">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
                         <p class="article_description">There are many things that are important to catalog design...</p>
                         <div class="article_author">
-                            <img src="./assets/author_photo3.jpg" alt="">
+                            <img src="./img/author_photo3.jpg" alt="">
                             <div class="author_info">
                                 <p class="author_name">ALICE WARD</p>
                                 <p class="article_date">30 Nov 2019</p>
@@ -176,12 +203,12 @@
                     </div>
                 </div>
                 <div class="slider_item">
-                    <img src="./assets/slider_img2.jpg" alt="">
+                    <img src="./img/slider_img1.jpg" alt="">
                     <div class="article_content">
                         <h4 class="article_heading">EFFECTIVE ADVERTISING POINTERS.</h4>
                         <p class="article_description">Having a home based business is a wonderful asset to your life...</p>
                         <div class="article_author">
-                            <img src="./assets/author_photo2.jpg" alt="">
+                            <img src="./img/author_photo2.jpg" alt="">
                             <div class="author_info">
                                 <p class="author_name">DOMINIC FREEMAN</p>
                                 <p class="article_date">13 Dec 2019</p>
@@ -190,12 +217,12 @@
                     </div>
                 </div>
                 <div class="slider_item">
-                    <img src="./assets/slider_img3.jpg" alt="">
+                    <img src="./img/slider_img2.jpg" alt="">
                     <div class="article_content">
                         <h4 class="article_heading">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
                         <p class="article_description">There are many things that are important to catalog design...</p>
                         <div class="article_author">
-                            <img src="./assets/author_photo3.jpg" alt="">
+                            <img src="./img/author_photo3.jpg" alt="">
                             <div class="author_info">
                                 <p class="author_name">ALICE WARD</p>
                                 <p class="article_date">30 Nov 2019</p>
