@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/leaflet.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="./img/lg.svg">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
-    <link rel="stylesheet" href="./css/dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,57 +23,57 @@
 
 <body>
     <header class="header" id="header">
-       <div class="header_wrapper">
-        <div class="container">
-            <div class="header_content">
-                <div class="logo_wrapper">
-                    <a href="#">
-                        <img src="./img/Logo.svg" alt="" class="page_logo">
-                    </a>
-                </div>
-                <nav class="nav_wrapper">
-                    <ul class="nav_list">
-                        <li class="list_item">
-                            <a class="nav_link">about us</a>
-                        </li>
-                        <li class="list_item">
-                            <a class="nav_link">projects</a>
-                        </li>
-                        <li class="list_item">
-                            <a class="nav_link">news</a>
-                        </li>
-                        <li class="list_item">
-                            <a class="nav_link">contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="social_media">
-                    <ul class="social_list">
-                        <li class="social_item">
-                            <a href="#" class="social_link">
-                                <i class="fa-brands fa-facebook-f header_icon"></i>
-                            </a>
-                        </li>
-                        <li class="social_item">
-                            <a href="#" class="social_link">
-                                <i class="fa-brands fa-twitter header_icon"></i>
-                            </a>
-                        </li>
-                        <li class="social_item">
-                            <a href="#" class="social_link">
-                                <i class="fa-brands fa-instagram header_icon"></i>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="header_wrapper">
+            <div class="container">
+                <div class="header_content">
+                    <div class="logo_wrapper">
+                        <a href="#">
+                            <img src="./img/Logo.svg" alt="" class="page_logo">
+                        </a>
+                    </div>
+                    <nav class="nav_wrapper">
+                        <ul class="nav_list">
+                            <li class="list_item">
+                                <a class="nav_link" href="#header">about us</a>
+                            </li>
+                            <li class="list_item">
+                                <a class="nav_link" href="#project_section">projects</a>
+                            </li>
+                            <li class="list_item">
+                                <a class="nav_link" href="#news">news</a>
+                            </li>
+                            <li class="list_item">
+                                <a class="nav_link" href="#contacts">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social_media">
+                        <ul class="social_list">
+                            <li class="social_item">
+                                <a href="#" class="social_link">
+                                    <i class="fa-brands fa-facebook-f header_icon"></i>
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#" class="social_link">
+                                    <i class="fa-brands fa-twitter header_icon"></i>
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#" class="social_link">
+                                    <i class="fa-brands fa-instagram header_icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-       </div>
         <div class="hero_slider">
             <div class="hero_content">
                 <img src="./img/hero_back.jpg" class="slider_img" alt="">
                 <div class="slider_content">
-                    <h1 class="hero_title">SIMPLE MODERN</h1>
+                    <h2 class="hero_title">SIMPLE MODERN</h2>
                     <p class="hero_subtitle ">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
                 </div>
             </div>
@@ -103,10 +106,13 @@
                 </div>
             </div>
         </div>
+        <a href="#project_section" class="scroll_to_section">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
     </header>
     <div class="projects_wrapper" id="project_section">
         <div class="container">
-            <div class="projects_heading">
+            <div class="section_title">
                 <h2 class="projects_title">
                     what we do
                 </h2>
@@ -153,90 +159,197 @@
             </div>
         </div>
     </div>
-    <div class="article_wrapper">
+    <div class="article_wrapper" id="news">
         <div class="container">
-            <h3 class="article_title">
-                latest news
-            </h3>
-            <div class="article_slider">
-                <div class="slider_item">
-                    <img src="./img/slider_img1.jpg" alt="">
-                    <div class="article_content">
-                        <h4 class="article_heading">see the unmatched beauty of the great.</h4>
-                        <p class="article_description">Free directories: directories are perfect for customers that are
-                            searching for...</p>
-                        <div class="article_author">
-                            <img src="./img/author_photo1.jpg" alt="">
-                            <div class="author_info">
-                                <p class="author_name">alja brun</p>
-                                <p class="article_date">20 Jan 2020</p>
+            <div class="news_heading">
+                <h3 class="article_title">
+                    latest news
+                </h3>
+            </div>
+            <div class="article_slider_wrapper">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="prev_arrow"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+                    <path
+                        d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z"
+                        fill="white" />
+                </svg>
+
+                <div class="article_slider">
+                    <div class="slider_item">
+                        <img src="./img/slider_img1.jpg" alt="">
+                        <div class="article_content">
+                            <a class="article_heading" href="#">see the unmatched beauty of the great.</a>
+                            <p class="article_description">Free directories: directories are perfect for customers that
+                                are
+                                searching for...</p>
+                            <div class="article_author">
+                                <img src="./img/author_photo1.jpg" alt="">
+                                <div class="author_info">
+                                    <p class="author_name">alja brun</p>
+                                    <p class="article_date">20 Jan 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slider_img2.jpg" alt="">
+                        <div class="article_content">
+                            <a class="article_heading" href="#">EFFECTIVE ADVERTISING POINTERS.</a>
+                            <p class="article_description">Having a home based business is a wonderful asset to your
+                                life...</p>
+                            <div class="article_author">
+                                <img src="./img/author_photo2.jpg" alt="">
+                                <div class="author_info">
+                                    <p class="author_name">DOMINIC FREEMAN</p>
+                                    <p class="article_date">13 Dec 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slider_img3.jpg" alt="">
+                        <div class="article_content">
+                            <a class="article_heading" href="#">HYPNOTIZE YOURSELF INTO THE GHOST.</a>
+                            <p class="article_description">There are many things that are important to catalog design...
+                            </p>
+                            <div class="article_author">
+                                <img src="./img/author_photo3.jpg" alt="">
+                                <div class="author_info">
+                                    <p class="author_name">ALICE WARD</p>
+                                    <p class="article_date">30 Nov 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slider_img1.jpg" alt="">
+                        <div class="article_content">
+                            <a class="article_heading" href="#">EFFECTIVE ADVERTISING POINTERS.</a>
+                            <p class="article_description">Having a home based business is a wonderful asset to your
+                                life...</p>
+                            <div class="article_author">
+                                <img src="./img/author_photo2.jpg" alt="">
+                                <div class="author_info">
+                                    <p class="author_name">DOMINIC FREEMAN</p>
+                                    <p class="article_date">13 Dec 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slider_img2.jpg" alt="">
+                        <div class="article_content">
+                            <a class="article_heading" href="#">HYPNOTIZE YOURSELF INTO THE GHOST.</a>
+                            <p class="article_description">There are many things that are important to catalog design...
+                            </p>
+                            <div class="article_author">
+                                <img src="./img/author_photo3.jpg" alt="">
+                                <div class="author_info">
+                                    <p class="author_name">ALICE WARD</p>
+                                    <p class="article_date">30 Nov 2019</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider_item">
-                    <img src="./img/slider_img2.jpg" alt="">
-                    <div class="article_content">
-                        <h4 class="article_heading">EFFECTIVE ADVERTISING POINTERS.</h4>
-                        <p class="article_description">Having a home based business is a wonderful asset to your life...</p>
-                        <div class="article_author">
-                            <img src="./img/author_photo2.jpg" alt="">
-                            <div class="author_info">
-                                <p class="author_name">DOMINIC FREEMAN</p>
-                                <p class="article_date">13 Dec 2019</p>
-                            </div>
-                        </div>
-                    </div>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="next_arrow"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+                    <path
+                        d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="gallery_wrapper" id="gallery">
+        <div class="container">
+            <div class="section_title">
+                <h3 class="gallery_ttile">Gallery</h3>
+            </div>
+            <div class="grid_gallery">
+                <a class="grid_item" href="./img/Mask group.jpg">
+                    <img src="./img/Mask group.jpg" alt="">
+                </a>
+                <a class="grid_item" href="./img/gallery_img.jpg">
+                    <img src="./img/gallery_img.jpg" alt="">
+                </a>
+                <a class="grid_item" href="./img/gallery_img2.jpg">
+                    <img src="./img/gallery_img2.jpg" alt="">
+                </a>
+                <a class="grid_item" href="./img/gallery_img3.jpg">
+                    <img src="./img/gallery_img3.jpg" alt="">
+                </a>
+                <a class="grid_item" href="./img/gallery_img4.jpg">
+                    <img src="./img/gallery_img4.jpg" alt="">
+                </a>
+            </div>
+            <button class="gallery_button">see more</button>
+        </div>
+    </div>
+    <div class="map_section" id="map_section">
+    </div>
+    <div class="contacts_wrapper" id="contacts">
+        <div class="form_wrapper">
+            <div class="section_title">
+                <h4 class="contacts_title">get in touch</h4>
+            </div>
+            <div class="form_content">
+                <div class="contact_navigation_column">
+                    <a href="#" class="contact_link"><i class="fa-solid fa-location-dot"></i>91 Nolan Extensions Suite 670</a>
+                    <a href="#" class="contact_link"><i class="fa-solid fa-phone"></i>+001 356-868-2454</a>
+                    <a href="#" class="contact_link"><i class="fa-solid fa-inbox"></i>montichello@service.com </a>
+                    <p class="contact_link"> <i class="fa-regular fa-clock"></i>From 07:05AM to 19:30PM</p>
                 </div>
-                <div class="slider_item">
-                    <img src="./img/slider_img3.jpg" alt="">
-                    <div class="article_content">
-                        <h4 class="article_heading">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                        <p class="article_description">There are many things that are important to catalog design...</p>
-                        <div class="article_author">
-                            <img src="./img/author_photo3.jpg" alt="">
-                            <div class="author_info">
-                                <p class="author_name">ALICE WARD</p>
-                                <p class="article_date">30 Nov 2019</p>
-                            </div>
-                        </div>
+                <div class="input_form">
+                    <div class="name_input">
+                        <input type="text" placeholder="Enter your name">
                     </div>
-                </div>
-                <div class="slider_item">
-                    <img src="./img/slider_img1.jpg" alt="">
-                    <div class="article_content">
-                        <h4 class="article_heading">EFFECTIVE ADVERTISING POINTERS.</h4>
-                        <p class="article_description">Having a home based business is a wonderful asset to your life...</p>
-                        <div class="article_author">
-                            <img src="./img/author_photo2.jpg" alt="">
-                            <div class="author_info">
-                                <p class="author_name">DOMINIC FREEMAN</p>
-                                <p class="article_date">13 Dec 2019</p>
-                            </div>
-                        </div>
+                    <div class="email_input">
+                        <input type="email" placeholder="Email">
                     </div>
-                </div>
-                <div class="slider_item">
-                    <img src="./img/slider_img2.jpg" alt="">
-                    <div class="article_content">
-                        <h4 class="article_heading">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
-                        <p class="article_description">There are many things that are important to catalog design...</p>
-                        <div class="article_author">
-                            <img src="./img/author_photo3.jpg" alt="">
-                            <div class="author_info">
-                                <p class="author_name">ALICE WARD</p>
-                                <p class="article_date">30 Nov 2019</p>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="gallery_button">Submit</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="gallery_wrapper">
-
-    </div>
+    <footer class="footer">
+       <div class="footer_container">
+        <div class="footer_content">
+            <div class="logo_footer_section">
+                <a href="#">
+                    <img src="./img/Logo.svg" alt="">
+                </a>
+                <p class="logo_section_text">Copyrights © 2020 Montichello</p>    
+            </div>
+            <div class="social_media">
+                <ul class="social_list">
+                    <li class="social_item">
+                        <a href="#" class="social_link">
+                            <i class="fa-brands fa-facebook-f header_icon"></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#" class="social_link">
+                            <i class="fa-brands fa-twitter header_icon"></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#" class="social_link">
+                            <i class="fa-brands fa-instagram header_icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </div>
+    </footer>
     <script src="./js/jquery.js"></script>
+    <script src="./js/leaflet.js"></script>
+    <script src="./js/lightgallery.min.js"></script>
+    <script src="./js/lg-thumbnail.min.js"></script>
+    <script src="./js/lg-zoom.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
