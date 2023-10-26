@@ -20,13 +20,7 @@ $(document).ready(function () {
         nextArrow: '.next_arrow',
         infinite: true,
         responsive: [{
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-            },
-            {
+
             breakpoint: 968,
             settings: {
                 slidesToShow: 2,
@@ -35,14 +29,12 @@ $(document).ready(function () {
             }
         },
         {
-            breakpoint: 568,
+            breakpoint: 620,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                adaptiveHeight: true,
-                variableWidth: true
-
-            }}
+                arrows: false,
+            }},
         ]
     });
 });

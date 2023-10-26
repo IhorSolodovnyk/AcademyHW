@@ -2,10 +2,17 @@
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
+    outline: 1px solid red
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 80%;
+    }
 }
 
 .active {
-    background-color: hwb(271 16% 61%);
+    background: linear-gradient(243deg, #392FA0 45.93%, #C955FF 67.02%);
 }
 
 .header {
@@ -133,7 +140,7 @@
 .header_wrapper {
     width: 100%;
     padding: 25px 0;
-    z-index: 1;
+    z-index: 1000;
     position: fixed;
 }
 
@@ -279,6 +286,16 @@
     }
 }
 
+@media screen and (max-width: 620px) {
+    .projects_wrapper:before{
+        height: 400px;
+    }
+    .projects_wrapper::after {
+        height: 400px;
+        bottom: 500px;
+    }
+}
+
 
 .projects_title {
     color: #2C4058;
@@ -290,20 +307,44 @@
     margin-bottom: 110px;
 }
 
-@media screen and (max-width: 968px) {
-    .projects_content {
-        & img {
-            width: 50%;
-        }
-    }
-  }
-
 .projects_content {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
     padding-bottom: 120px;
+    &:last-of-type {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .description_heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .projects_content {
+        & img {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .projects_content,
+    .projects_content:last-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        & img {
+            width: 100%;
+        }
+    }
 }
 
 .description_sup {
@@ -342,10 +383,17 @@
     background-color: transparent;
     border: 1px solid #2C4058;
     cursor: pointer;
+    display: block;
 
     &:hover {
         background-color: #2C4058;
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .project_button {
+        margin: 0 auto;
     }
 }
 
@@ -363,8 +411,11 @@
     }
 }
 
-.reverse {
-    flex-direction: row-reverse;
+@media screen and (max-width: 620px) {
+    .project_location {
+        text-align: center;
+        padding-top: 20px;
+    }
 }
 
 .article_wrapper {
@@ -566,6 +617,21 @@
     }
 }
 
+@media screen and (max-width: 620px) {
+    .grid_gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .grid_item img{
+        max-width: 280px;
+        width: 100%;
+    }
+}
+
 .grid_item {
     display: inline-block;
     position: relative;
@@ -676,7 +742,10 @@
 @media screen and (max-width: 820px) {
     .contacts_wrapper {
         position: relative;
-        background-size: 100vh;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 70px 0 30px;
     }
 }
 
@@ -716,6 +785,14 @@
     gap: 50px;
 }
 
+@media screen and (max-width: 620px) {
+    .form_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .input_form {
     display: flex;
     flex-direction: column;
@@ -728,6 +805,13 @@
     & .name_input, .email_input {
         width: 100%;
     }  
+}
+
+@media screen and (max-width: 620px) {
+    .input_form {
+        width: 50%;
+        align-items: center;
+    }
 }
 
 input[type="text"],
@@ -761,15 +845,35 @@ input[type="email"] {
     }
 }
 
+@media screen and (max-width: 620px) {
+    .footer {
+        padding: 100px 0;
+    }
+}
+
 .footer_container {
     width: 100%;
     max-width: 770px;
     margin: 0 auto;
 }
 
+@media screen and (max-width: 620px) {
+    .footer_container {
+        width: 85%;
+    }
+}
+
 .footer_content {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 620px) {
+    .footer_content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
 
 .logo_footer_section {
@@ -782,5 +886,11 @@ input[type="email"] {
         font-family: 'Montserrat';
         font-size: 14px;
         font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .logo_footer_section {
+        align-items: center;
     }
 }
