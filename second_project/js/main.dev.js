@@ -55,7 +55,7 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 }).addTo(map);
 L.marker([51.492239084172006, 31.291088045773783], {
   icon: customIcon
-}).addTo(map).bindPopup('Bus Station').openPopup();
+}).addTo(map).bindPopup('Bus Station').openPopup(); //Header BCG
 
 window.onscroll = function () {
   headerBackground();
@@ -69,4 +69,10 @@ function headerBackground() {
   } else {
     document.querySelector('.header_wrapper').classList.remove('active');
   }
+}
+
+function toggleMenu(e) {
+  e.preventDefault();
+  document.querySelector('.hamburger').classList.toggle('is-active');
+  document.querySelector('.main_nav').classList.toggle('menu-open');
 }
