@@ -630,8 +630,11 @@
 }
 
 @media screen and (max-width: 968px) {
-    .slider_item img {
+    .slider_item {
         max-width: 330px;
+        & img {
+            max-width: 330px;
+        }
     }
 }
 
